@@ -18,6 +18,11 @@ from books;
 
 -- group by --
 
+-- select statement in a group by query --
+-- 1. all values in the column should be same -- 
+-- 2. column values should be able to use inside a aggregate function --
+
+
 select concat(author_fname, ' ', author_lname), count(*)
 from books
 group by concat(author_fname, ' ', author_lname);
